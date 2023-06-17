@@ -1,10 +1,12 @@
 import './App.css';
 import React from 'react'
+import TreatmentForm from '../../yash/TreatmentForm'
 import { useState } from 'react';
 import axios from 'axios';
 function Disease() {
   const [mydata, setMydata] = useState("SelectSymtom");
   const [di,setdi]=useState('');
+  const [hospital,sethos]=useState(false);
 
   const handledisease=(event)=>{
     let data={
@@ -16,9 +18,13 @@ function Disease() {
 
     }
 
+
+
     const getdata=axios.post('http://localhost:3003/disease',data);
 
-    getdata.then((res)=> res).then((dat)=>setdi(dat));
+    getdata.then((res)=> res).then((dat)=>setdi(dat) 
+    
+    ).then((res)=>sethos(true));
 
 
   }
@@ -638,6 +644,7 @@ function Disease() {
       
     
 <h2 className='ddddd'>{di.data}</h2>
+{hospital && <TreatmentForm/>}
 </div>
 
 {/* <div className='footer'>

@@ -82,7 +82,17 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Prescription history
+                Disease detection
+              </Link>
+            </li>
+
+            <li className='nav-item'>
+              <Link
+                to='/booknow'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+               Book now
               </Link>
             </li>
 

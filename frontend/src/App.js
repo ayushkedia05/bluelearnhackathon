@@ -5,7 +5,7 @@ import {BrowserRouter as  Router ,Route ,Routes} from 'react-router-dom';
 import webFont from 'webfontloader';
 import React from 'react';
 import Products from './components/Product/Products.js'
-
+import AppointmentForm from './yash/AppointmentForm';
 import Bmi from './components/BmiComponent';
 import FinalDiet from './components/BmiComponent/FinalDiet';
 import FinalDiet2 from './components/BmiComponent/Finaldiet2';
@@ -49,10 +49,13 @@ function App() {
 
       <Route exact path="/nutrition" element={<Mvp />} />
       <Route path="exercises/" element={<Home />} />
+      <Route exact path="/booknow" element={<AppointmentForm />} />
+
+      
       
       <Route path="/exercise/:id" element={<ExerciseDetail />} />
 
-      <Route exact path="/diease-prediction" element={<HomeTime />} /> 
+      <Route exact path="/diease-prediction" element={<Disease />} /> 
 
 
       </Routes>
