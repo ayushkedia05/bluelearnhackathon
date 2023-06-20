@@ -5,7 +5,7 @@ import './Home.css';
 const Home = () => {
   return (
     <>
-<Navbar/>
+{/* <Navbar/> */}
 <img src={hos1} alt="Landing"/>
 
 </>

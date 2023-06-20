@@ -10,7 +10,7 @@ const AboutSection = () => {
   return (
     <section className="about-section">
       <div className="container">
-        <h2>About Us</h2>
+        <center><h1>HEALTHO</h1></center>
         <p>
           Welcome to our Hospital Management System! We provide a comprehensive range of services to ensure your health and well-being.
         </p>

@@ -75,7 +75,7 @@ const [symptoms,setSymptoms]=useState('');
           />
         </label>
         <button type="submit" onClick={()=>
-        alert("Booked Successfully")
+        alert(`https://meet.google.com/wxe-qznv-djh is the your link for instant appointment with our doctor` )
         }>Book Now</button>
       </form>
       </div>

@@ -2,6 +2,11 @@ import React from 'react';
 import bgpic from './../../images/health.jpg'
 import { Button } from './Button';
 import './HeroSection.css';
+import Yashhome from './../../yash/Home'
+import Plans from './../../yash/Plans'
+import Quotes from './../../yash/HealthQuotes'
+import HealthQuotes from './../../yash/HealthQuotes';
+
 
 function HeroSection() {
 
@@ -14,6 +19,7 @@ function HeroSection() {
     backgroundRepeat: 'no-repeat',
 };
   return (
+    <div>
     <div className='hero-container' style={myStyle}>
       {/* <video src='/videos/video-1.mp4' autoPlay loop muted /> */}
       <h1>Become healthy NOW</h1>
@@ -30,6 +36,11 @@ function HeroSection() {
        
       </div>
     </div>
+       <Plans/>
+       <Yashhome/>
+       <HealthQuotes/>
+
+      </div>
   );
 }
 
